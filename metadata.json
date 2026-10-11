@@ -1,0 +1,11 @@
+{
+  "name": "MediCare — Doctor Consultation",
+  "description": "Modern Android healthcare app for doctor consultation, video appointments, and medical records.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

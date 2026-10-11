@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "MediCare — Doctor Consultation",
+  "short_name": "MediCare",
+  "description": "Modern Android healthcare app for doctor consultation, video appointments, and medical records.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#EAF5F2",
+  "theme_color": "#176B62",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

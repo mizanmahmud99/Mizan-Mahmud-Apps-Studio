@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --primary-teal: #176B62;
+    --primary-teal-dark: #104C45;
+    --secondary-emerald: #2F8F83;
+    --secondary-emerald-light: #48A89C;
+    --light-mint: #EAF5F2;
+    --mint-surface: #F3FAF8;
+    --card-bg: #FFFFFF;
+    --text-primary: #203936;
+    --text-secondary: #7B918D;
+    --accent-coral: #F16F6A;
+    --accent-coral-soft: #FDE8E7;
+    --divider: #E3ECE9;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #E2EDE9;
+    color: #203936;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbar and utilities for clean mobile Android app feeling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Material 3 touch ripple approximation */
+.ripple-effect {
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.15s ease;
+}
+.ripple-effect:active {
+  transform: scale(0.97);
+}
+
+/* Android frame screen glow */
+.android-shadow {
+  box-shadow: 0 25px 60px -15px rgba(23, 107, 98, 0.22), 0 10px 24px -8px rgba(0, 0, 0, 0.12);
+}
